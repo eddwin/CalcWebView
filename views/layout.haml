@@ -25,11 +25,6 @@
     %div{:class => "jumbotron"}
       %div{:class => "container"}
         %div{:class => "starter-template"}
-          %h1 Calculadora Salarial
-          %p{:class => "lead"} plz send salvadoran coffee :(
-          %p
-            %a{:href => "/industria"}
-              %button{:type => "button", :class => "btn btn-lg btn-primary" } Soy Empleado
-            %button{:type => "button", :class => "btn btn-lg btn-primary"} Soy Patrono
+          = yield
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"}
     %script{:src => "/js/bootstrap.min.js"}

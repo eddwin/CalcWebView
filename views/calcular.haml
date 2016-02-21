@@ -1,0 +1,37 @@
+%div{:class => "simple-template"}
+  %h1 Ingreso de datos
+  %form{:class => "form-horizontal"}
+    %fieldset
+    %legend Ingreso de datos
+    %div{:class => "form-group"}
+      %label{:class => "col-md-4 control-label", :for => "textinput1"} Cual es su salario?
+      %div{:class => "col-md-4"}
+        %input{:id => "textinput", :name => "salarios",  :type => "text", :placeholder => "$0", :class => "form-control input-md", :required => ""}
+        %span{:class => "help-block"} Salario mensual
+    %div{:class => "form-group"}
+      %label{:class => "col-md-4 control-label", :for => "textinput1"} Comisiones del mes
+      %div{:class => "col-md-4"}
+        %input{:id => "textinput1", :name => "comisiones",  :type => "text", :placeholder => "$0", :class => "form-control input-md", :required => ""}
+        %span{:class => "help-block"} Comisiones por venta, por trabajo.
+    %div{:class => "form-group"}
+      %label{:class => "col-md-4 control-label", :for => "textinput1"} Otros Ingresos Laborales
+      %div{:class => "col-md-4"}
+        %input{:id => "textinput2", :name => "otrosingresos",  :type => "text", :placeholder => "$0", :class => "form-control input-md", :required => ""}
+        %span{:class => "help-block"} Bonificaciones, Aguinaldo.
+    %div{:class => "form-group"}
+      %label{:class => "col-md-4 control-label", :for => "textinput1"} Otros Beneficios No Gravables
+      %div{:class => "col-md-4"}
+        %input{:id => "textinput3", :name => "otrosbeneficios",  :type => "text", :placeholder => "$0", :class => "form-control input-md", :required => ""}
+        %span{:class => "help-block"} Como gasolina u otros vi&aacute;ticos.
+    %div{:class => "form-group"}
+      %label{:class => "col-md-4 control-label", :for => "selectbasic"}Administrador de Pensi&oacute;n
+      %div{:class => "col-md-4"}
+        %select{:id => "selectbasic", :name => "selectbasic", :class => "form-control"}
+          %option{:value => "1"}Seleccione uno
+          %option{:value => "2"}Conf&iacute;a
+          %option{:value => "3"}Crecer
+          %option{:value => "4"}ISSS
+          %option{:value => "1"}ISFA
+    %div{:class => "form-group"}
+      %div{:class => "col-sm-offset-2"}
+        %button{:id => "btnCalc", :name => "btnCalc", :class => "btn btn-primary"}Calcular!
